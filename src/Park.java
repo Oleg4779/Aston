@@ -9,6 +9,11 @@ public class Park {
             this.workingTime = workingTime;
             this.cost = cost;
         }
+
+        @Override
+        public String toString() {
+            return "Attraction " + attractionName + ", workingTime: " + workingTime + ", cost: " + cost;
+        }
     }
 
 }

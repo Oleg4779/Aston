@@ -10,7 +10,7 @@ public class Main {
         employees[3] = new Employee("Anastasia", "Java developer", "nastya@gmail.com", "+375294568798", 2300, 29);
         employees[4] = new Employee("Stephen", "Teamlead", "steph@yandex.ru", "+375251245678", 3200, 38);
 
-        Park park = new Park();
-        new Park.Attraction("American mountains", "10:00 - 20:00", 2);
+        Park.Attraction attraction = new Park.Attraction("American mountains", "10:00 - 20:00", 5);
+        System.out.println(attraction.toString());
     }
 }
