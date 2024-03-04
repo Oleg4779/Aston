@@ -10,6 +10,7 @@ public class Animal {
         this.name = name;
         this.maxRun = maxRun;
         this.maxSwim = maxSwim;
+        animalsAmount++;
     }
 
     public String getName() {
