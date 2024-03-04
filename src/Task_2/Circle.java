@@ -1,3 +1,5 @@
+package Task_2;
+
 public class Circle extends Figure implements Calculable {
     private int radius;
 
@@ -26,7 +28,7 @@ public class Circle extends Figure implements Calculable {
 
     @Override
     public String toString() {
-        return "Circle. Perimeter: " + calculatePerimeter() + ", area: " + calculateArea() +
+        return "Task_2.Circle. Perimeter: " + calculatePerimeter() + ", area: " + calculateArea() +
                 ", fill color: " + getFillColor() + ", border color: " + getBorderColor();
     }
 }

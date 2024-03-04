@@ -1,3 +1,5 @@
+package Task_2;
+
 public class Triangle extends Figure implements Calculable {
     private int aSide;
     private int bSide;
@@ -48,7 +50,7 @@ public class Triangle extends Figure implements Calculable {
 
     @Override
     public String toString() {
-        return "Triangle. Perimeter: " + calculatePerimeter() + ", area: " +
+        return "Task_2.Triangle. Perimeter: " + calculatePerimeter() + ", area: " +
                 calculateArea() + ", fill color: " + getFillColor() +
                 ", border color: " + getBorderColor();
     }

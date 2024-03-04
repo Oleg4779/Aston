@@ -1,3 +1,5 @@
+package Task_1;
+
 public class Food {
     private int foodAmountInPlate;
 

@@ -1,3 +1,5 @@
+package Task_2;
+
 public class Figure {
     private String borderColor;
     private String fillColor;
@@ -11,16 +13,16 @@ public class Figure {
         return borderColor;
     }
 
-    public void setBorderColor(String borderColor) {
-        this.borderColor = borderColor;
-    }
+//    public void setBorderColor(String borderColor) {
+//        this.borderColor = borderColor;
+//    }
 
     public String getFillColor() {
         return fillColor;
     }
 
-    public void setFillColor(String fillColor) {
-        this.fillColor = fillColor;
-    }
+//    public void setFillColor(String fillColor) {
+//        this.fillColor = fillColor;
+//    }
 
 }
