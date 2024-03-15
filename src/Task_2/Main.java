@@ -11,7 +11,7 @@ public class Main {
 
 //        2.1
 
-        long counter = list.stream().filter(w -> w.equals("High")).count();
+        int counter = (int)list.stream().filter(w -> w.contains("High")).count();
         if (counter <= 1) {
             System.out.println("There is " + counter + " word \"High\" in collection.");
         } else {
@@ -28,16 +28,5 @@ public class Main {
         String lastElement = list.stream().reduce((a, b) -> b).orElse("0");
         System.out.println("The last element of the collection: " + lastElement);
 
-//        3
-
-        List<String> list2 = new ArrayList<>();
-        Collections.addAll(list2, "f10", "a15", "f2", "f4", "f5", "b54", "a16");
-        Collections.sort(list2, String::compareTo);
-        String[] arr = list2.toArray(new String[0]);
-
-
-        for (String s : arr) {
-            System.out.print(s + " ");
-        }
     }
 }
