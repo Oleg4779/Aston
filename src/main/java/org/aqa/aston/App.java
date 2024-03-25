@@ -1,13 +1,8 @@
 package org.aqa.aston;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+    public static void main(String[] args) {
+        Method method = new Method();
+        System.out.println(method.factorial(5));
     }
 }
