@@ -41,7 +41,6 @@ public class MainTest extends BaseTest {
     public void test4() {
         Mts mts = PageFactory.initElements(driver, Mts.class);
         driver.get("https://www.mts.by/");
-        mts.cookiesFrameAccepting();
         mts.phoneNumberFieldClick();
         mts.phoneNumberFieldEntry();
         mts.amountFieldClick();
