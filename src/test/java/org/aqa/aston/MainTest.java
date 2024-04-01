@@ -28,14 +28,13 @@ public class MainTest extends BaseTest {
     }
 
     @Test
-    public void test2() throws InterruptedException {
+    public void test2() {
         Mts mts = PageFactory.initElements(driver, Mts.class);
         driver.get("https://www.mts.by");
 
         mts.cookiesFrameAccepting();
         mts.serviceFieldsFilling();
         mts.continueButtonClick();
-        Thread.sleep(10000);
         WebElement iframe = driver.findElement(By.xpath("//iframe[@class='bepaid-iframe']"));
         driver.switchTo().frame(iframe);
         WebElement amount = driver.findElement(By.xpath("//div[@class='header__payment-amount']"));
